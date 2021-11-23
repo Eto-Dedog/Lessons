@@ -107,6 +107,9 @@ body {
     color: #302C34;
 }   
 /*секция рестораны*/
+.section-rest {
+    padding-bottom: 91px;
+}
 .section__header {
     display: flex;
     justify-content: space-between;
@@ -200,4 +203,35 @@ body {
     top: 50%;
     left: -15px;
     margin-top: -3px;
+}
+/*footer*/
+.footer {
+    background-color: #FFFFFF;
+    padding: 60px 0;
+}
+.footer-block {
+    max-width: 556px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation {
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #595959;
+    text-decoration: none;
+}
+.social-block {
+    max-width: 127px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

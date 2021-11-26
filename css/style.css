@@ -1,281 +1,68 @@
-@font-face {
-    font-family: 'SF Pro Display';
-    src: url(../fonts/SFProDisplay-Regular.ttf);
-} 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html {
-    font-family: 'Roboto', sans-serif;
-}
-body {
-    background-color: #F5F5F5;
-}
+
 .block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.cards {
-    flex-wrap: wrap;
-}
-button img {
-    margin-left: 4px;
-    margin-right: 4px;
-}
-.container {
-    max-width: 1200px;
+    max-width: 1920px;
     width: 100%;
-    margin: auto;
-}
-.input {
-    border: 1px solid #D9D9D9;
-    border-radius: 2px;
-    width: 100%;
-    padding-left: 32px;
-}
-.input::placeholder {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: #BFBFBF
-}
-.header {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.adress-input {
-    max-width: 690px;
-    height: 40px;
-    background: url('../img/Vector.svg')  no-repeat 10px center;
-    border: 1px solid #D9D9D9;
-}
-.buttons {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    
+    
 }
-.button {
-    padding: 8px 16px;
+
+.text {
     display: flex;
-    align-items: center;
-    border-radius: 2px;
-    border: none;
-    cursor: pointer;
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-}
-.button--primary {
-    background: #1890FF;
-    color: #FFFFFF;
-}
-.button--secondary {
-    background: transparent;
-    border: 1px solid #D9D9D9;
-    margin-left: 8px;
-}
-.section-promo {
-    margin-bottom: 56px;
-}
-.promo-block {
-    background: #FFF1B8 url('../img/promo.png') no-repeat right ;
-    border-radius: 10px;
-    padding: 68px 71px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.text-block {
-    max-width: 520px;
-    width: 100%;
-}
-.promo-title {
-    max-width: 438px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 39px;
-    line-height: 46px;
-    color: #302C34;
-    margin-bottom: 16px;
-}
-.promo-desc {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #302C34;
-}   
-/*секция рестораны*/
-.section-rest {
-    padding-bottom: 91px;
-}
-.section__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 44px;
-}
-.section__header-title {
-    font-weight: bold;
+    justify-content: center;
     font-size: 36px;
-    line-height: 42px;
-    color: #000000;
+    padding: 100px;
+    margin-bottom: 124px;
 }
-.search-input {
-    max-width: 306px;
-    height: 34px;
-    background: url('../img/search.svg')  no-repeat 10px center;
+
+.block-card {
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+       
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+
 }
 .card {
-    max-width: 384px;
+    max-width: 265px;
     width: 100%;
-    margin-bottom: 30px;
-    background-color:#FFFFFF;
-    border-radius: 7px;
-    text-decoration: none;
-    color: black;
-}
-.card-main {
-    padding: 21px 24px 35px;
-    position: relative;
-}
-.card-main__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.cart-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 24px;
-    line-height: 32px;
-}
-.time-write {
-    background: #262626;
-    border-radius: 2px;
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
-    color: #FFFFFF;
-    padding: 5px 8px;
-}
-.reiting {
-    position: relative;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 32px;
-    color: #FFC107;
-    margin-left: 22px;
-    margin-right: 26px;
-}
-.reiting::before {
-    content: '';
-    width: 15px;
-    height: 14px;
-    background: url('../img/starreit.svg');
-    position: absolute;
-    top: 1px;
-    left: -22px;
-}
-.midprice {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 32px;
-    color: #8C8C8C;
-    margin-right: 25px;
-}
-.dish {
-    position: relative;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 32px;
-    color: #8C8C8C;
-}
-.dish::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    background: url('../img/Ellipse.svg');
-    position: absolute;
-    top: 50%;
-    left: -15px;
-    margin-top: -3px;
-}
-/*footer*/
-.footer {
-    background-color: #FFFFFF;
-    padding: 60px 0;
-}
-.footer-block {
-    max-width: 556px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navigation {
-    max-width: 420px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.nav-link {
-    font-family: Roboto;
-    font-size: 18px;
-    color: #595959;
-    text-decoration: none;
-}
-.social-block {
-    max-width: 127px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-/*страница ресторана*/
-.restaurant__header {
-    max-width: 442px;
-    width: 100%;
-}
-.product-header {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-.desc {
-    font-size: 18px;
-    line-height: 21px;
-    color: #8C8C8C;
-    margin-top: 10px;
-}
-.product-desk {
-    max-width: 210px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 25px;
-}
-.product-price {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 32px;
-    color: #000000;
+    margin-bottom: 101px;
+    
 }
 
+.card-img {
+    padding: 0 22px;
+    margin-bottom: 24px;
+
+}
+.card-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.card-rub {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.card-botton {
+    padding: 24px 75px;
+    display: flex;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto;
+}

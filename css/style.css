@@ -131,6 +131,9 @@ button img {
     height: 34px;
     background: url('../img/search.svg')  no-repeat 10px center;
 }
+#index .card {
+    cursor: pointer;
+}
 .card {
     max-width: 384px;
     width: 100%;
@@ -386,6 +389,9 @@ button img {
 .modal--close {
    display: none;
 }
+.not--active {
+    display: none;
+}
 
 /*адаптация под экраны*/
 /*если ширина экрана стала >= 1200px*/
@@ -408,8 +414,8 @@ button img {
 }
 
 @media (max-width: 980px) {
-    .header_buttons {
-        display: flex;
+    .header__buttons {
+        display: none;
     }
     .header .logo-link {
         display: block;
@@ -498,7 +504,11 @@ button img {
         padding: 20px 0;
     }
 }
-
+@media (max-width: 515px) {
+    .modal-window {
+        display: none;
+    }
+}
 @media (max-width: 480px) {
    .adress-input {
        width: 100%;

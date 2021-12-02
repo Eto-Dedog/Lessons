@@ -393,6 +393,7 @@ button img {
     display: none;
 }
 
+
 /*адаптация под экраны*/
 /*если ширина экрана стала >= 1200px*/
 @media (max-width: 1240px) {
